@@ -4,18 +4,15 @@ module.exports = (app) => {
     // Create a score obj
     app.post('/score-board', schema.create);
 
-    // Get a score obj
-    app.get('/score-board', schema.create);
+    // Retrieve all score boards
+    app.get('/score-board/retrieve', schema.findAll);
 
-    // // Retrieve all Notes
-    // app.get('/players', notes.findAll);
-    //
-    // // Retrieve a single Note with noteId
-    // app.get('/notes/:noteId', notes.findOne);
-    //
-    // // Update a Note with noteId
-    // app.put('/notes/:noteId', notes.update);
-    //
-    // // Delete a Note with noteId
-    // app.delete('/notes/:noteId', notes.delete);
+    // // Retrieve a single score board with score board Id
+    // app.get('/Score board/:Score-board-id', schema.findOne);
+
+    // // Update a score board with noteId
+    // app.put('/notes/:Score-board-id', schema.update);
+
+    // // Delete a score board with noteId
+    // app.delete('/notes/:Score-board-id', schema.delete);
 }
