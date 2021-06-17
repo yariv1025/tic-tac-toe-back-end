@@ -31,7 +31,8 @@ app.get('/', (req, res) => {
     res.json({"message": "Welcome to Tic-Tac-Toe Data Base application."});
 });
 
-require('./app/routes/note.routes.js')(app);
+require('./app/routes/ScoreBoard.routes.js')(app);
+require('./app/routes/GameBoard.routes.js')(app);
 
 // listen for requests
 app.listen(port, () => {
