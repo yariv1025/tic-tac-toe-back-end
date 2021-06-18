@@ -17,4 +17,4 @@ Run Server
 node server.js
 ```
 
-You can browse the apis at <http://localhost:3000>
+You can browse the apis at <http://localhost:3001>
