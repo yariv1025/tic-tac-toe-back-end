@@ -34,7 +34,8 @@ app.get('/', (req, res) => {
 require('./app/routes/ScoreBoard.routes.js')(app);
 require('./app/routes/GameBoard.routes.js')(app);
 
+
 // listen for requests
 app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
+    console.log(`Tic-Tac-Toe Server is listening on port ${port}`);
 });

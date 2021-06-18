@@ -43,6 +43,9 @@ exports.findAll = (req, res) => {
     });
 };
 
+/**
+ * Not currently in use
+ * */
 // // Find a single score board with a score board Id
 // exports.findOne = (req, res) => {
 //     ScoreBoardSchema.findById(req.params._Id)

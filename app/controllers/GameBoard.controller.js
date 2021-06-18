@@ -51,7 +51,7 @@ exports.update = (req, res) => {
 
     // Find game board and update it with the request body
     GameBoardSchema.findByIdAndUpdate(req.body._Id, {
-        _id: req.body.id
+        board: req.body.board
     }, {new: true})
         .then(item => {
             if (!item) {
